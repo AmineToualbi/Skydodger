@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapps.toualbiamine.skydodger.vehicle"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:onClick="back" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:text="H A N G A R"
+        android:textSize="32sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/plane"
+                android:src="@drawable/possibleplane2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/planeText"
+                android:text="Plane"
+                android:textColor="@color/valid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="30dp">
+
+            <ImageView
+                android:id="@+id/helicopter"
+                android:src="@drawable/possiblehelicopter"
+                android:layout_width="70dp"
+                android:layout_height="75dp" />
+
+            <TextView
+                android:id="@+id/helicoText"
+                android:text="Helicopter"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/requireHelico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Requirement: 3000 m"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/invalid"
+                android:alpha=".3"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/ironman"
+                android:src="@drawable/ironmanhead"
+                android:layout_width="75dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:id="@+id/ironmText"
+                android:text="Ironman"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/requireIron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Requirement: 6000 m"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/invalid"
+                android:alpha=".3"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAKEOFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="play"/>
+
+
+</LinearLayout>

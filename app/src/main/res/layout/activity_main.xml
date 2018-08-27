@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapps.toualbiamine.skydodger.main"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <TextView
+        android:background="@color/scoreColor"
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Distance: 300 m"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:paddingLeft="210dp"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/plane"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/possibleplane2" />
+
+        <ImageView
+            android:id="@+id/helicop"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/possiblehelicopter" />
+
+        <ImageView
+            android:id="@+id/ironman"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ironm" />
+
+
+        <ImageView
+            android:id="@+id/tallSkyscraper"
+            android:layout_width="75dp"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/skyscraper2" />
+
+        <ImageView
+            android:id="@+id/shortSkyscraper"
+            android:layout_width="75dp"
+            android:layout_height="350dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/skyscraper" />
+
+        <ImageView
+            android:id="@+id/smallScreenTallSky"
+            android:layout_width="50dp"
+            android:layout_height="248dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/skyscraper2"/>
+
+        <ImageView
+            android:id="@+id/smallScreenSmallSky"
+            android:layout_width="50dp"
+            android:layout_height="223dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/skyscraper"/>
+
+        <ImageView
+            android:id="@+id/cloud"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/balloon" />
+
+        <ImageView
+            android:id="@+id/airbus"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:src="@drawable/airbuse" />
+
+        <ImageView
+            android:id="@+id/realCloud"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cloude" />
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:text="TAP TO START"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="185dp"
+            android:text="G A M E  O V E R"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/finalScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Distance: 100 m"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/topScoreLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+            android:text="Distance max: 300 m"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="chooseVehicle"
+            android:text="HANGAR" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="50dp"
+            android:onClick="playAgain"
+            android:text="PLAY AGAIN" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pause"
+            android:text="PAUSE" />
+
+        <ImageView
+            android:id="@+id/pauseImg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:onClick="pause"
+            android:src="@drawable/pause" />
+
+    </FrameLayout>
+
+</LinearLayout>
